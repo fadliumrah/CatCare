@@ -24,6 +24,12 @@
         <activity
             android:name=".ui.dashboard.gallery.GalleryListActivity"
             android:exported="false" />
+            android:name=".ui.dashboard.care.CareActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".ui.splashscreen.SplashScreenActivity"
             android:exported="true">

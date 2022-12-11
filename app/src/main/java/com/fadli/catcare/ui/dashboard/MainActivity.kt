@@ -8,6 +8,9 @@ import com.fadli.catcare.ui.auth.AuthActivity
 import com.fadli.catcare.ui.dashboard.profile.ProfileFragment
 import com.fadli.catcare.R
 import com.fadli.catcare.databinding.ActivityMainBinding
+
+import com.fadli.catcare.ui.dashboard.calendar.CalendarFragment
+import com.fadli.catcare.ui.dashboard.care.CareActivity
 import com.fadli.catcare.ui.dashboard.care.CareFragment
 import com.fadli.catcare.ui.dashboard.gallery.GalleryActivity
 import com.fadli.catcare.ui.dashboard.home.HomeFragment
@@ -31,8 +34,9 @@ class MainActivity : AppCompatActivity()  {
             when (it.itemId) {
                 R.id.navigation_home -> switchFragment(fragmentHome)
                 R.id.navigation_profile -> switchFragment(fragmentProfile)
-                R.id.navigation_care -> switchFragment(fragmentCare)
+                R.id.navigation_care -> startActivity(Intent(this, CareActivity::class.java))
                 R.id.navigation_gallery -> startActivity(Intent(this, GalleryActivity::class.java))
+                //R.id.navigation_calendar -> switchFragment(fragmentCalendar)
             }
             true
         }

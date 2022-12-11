@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="6dp"
+    card_view:cardCornerRadius="20dp"
+    android:backgroundTint="#DCDCDC">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <TextView
+            android:id="@+id/title_litterbox"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/lexend_deca"
+            android:gravity="left"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:text="Judul Litterbox" />
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toTopOf="@+id/tv_date"
+            card_view:layout_constraintEnd_toEndOf="@+id/tv_month"
+            card_view:layout_constraintStart_toStartOf="@+id/tv_month"
+            card_view:layout_constraintTop_toTopOf="@id/tv_day"
+            tools:text="SENIN"
+            android:fontFamily="@font/lexend_deca"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:maxLines="2"
+            android:textColor="@color/light_blue_900"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            card_view:layout_constraintEnd_toEndOf="@+id/tv_day"
+            card_view:layout_constraintStart_toStartOf="@+id/tv_day"
+            card_view:layout_constraintTop_toBottomOf="@id/tv_day"
+            tools:text="30"
+            android:fontFamily="@font/lexend_deca"
+            />
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/lexend_deca"
+            android:gravity="left"
+            android:maxLines="2"
+            android:textColor="@color/light_blue_900"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toTopOf="@+id/tv_day"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:text="DES" />
+
+        <TextView
+            android:id="@+id/schedule_litterbox"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/lexend_deca"
+            android:gravity="left"
+            android:maxLines="2"
+            android:textSize="15sp"
+            card_view:layout_constraintStart_toStartOf="@+id/title_litterbox"
+            card_view:layout_constraintTop_toBottomOf="@+id/title_litterbox"
+            tools:text="Jadwal LitterBox" />
+
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#5188CE"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            card_view:drawableEndCompat="@drawable/ic_baseline_arrow_forward_24"
+            card_view:drawableTint="#5188CE"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
