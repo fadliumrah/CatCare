@@ -4,7 +4,6 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.provider.Settings
-import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,11 +11,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.fadli.catcare.data.viewmodel.SettingViewModel
 import com.fadli.catcare.data.viewmodel.ViewModelSettingFactory
-import com.fadli.catcare.R
 import com.fadli.catcare.databinding.FragmentProfileBinding
 import com.fadli.catcare.ui.dashboard.MainActivity
 import com.fadli.catcare.utils.Constanta
-import com.fadli.catcare.utils.Helper
 import com.fadli.catcare.utils.SettingPreferences
 import com.fadli.catcare.utils.dataStore
 
@@ -31,7 +28,10 @@ class ProfileFragment : Fragment() {
     ): View {
         binding = FragmentProfileBinding.inflate(inflater, container, false)
         return binding.root
+
+
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -73,5 +73,8 @@ class ProfileFragment : Fragment() {
             startActivity(Intent(Settings.ACTION_LOCALE_SETTINGS))
         }
 
+
     }
+
+
 }

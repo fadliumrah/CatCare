@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dataCat.DetailDataActivity">
+
+    <ImageView
+        android:id="@+id/dtImg"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sphynx" />
+
+    <TextView
+        android:id="@+id/dtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/dtImg"
+        app:layout_constraintStart_toStartOf="@+id/dtImg"
+        app:layout_constraintTop_toBottomOf="@+id/dtImg"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/txtRas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dtName"
+        android:text="Ras : " />
+
+    <TextView
+        android:id="@+id/dtRas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtRas"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toEndOf="@+id/txtRas"
+        app:layout_constraintTop_toTopOf="@+id/txtRas"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Ras" />
+
+    <TextView
+        android:id="@+id/txtColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:text="Color : "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRas" />
+
+    <TextView
+        android:id="@+id/dtColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtColor"
+        app:layout_constraintStart_toEndOf="@+id/txtColor"
+        app:layout_constraintTop_toTopOf="@+id/txtColor"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Color" />
+
+    <TextView
+        android:id="@+id/txtJk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:text="Jenis Kelamin : "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtColor" />
+
+    <TextView
+        android:id="@+id/dtJk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtJk"
+        app:layout_constraintStart_toEndOf="@+id/txtJk"
+        app:layout_constraintTop_toTopOf="@+id/txtJk"
+        tools:text="JK" />
+
+
+
+    <TextView
+        android:id="@+id/txtUmur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:text="Umur : "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtJk" />
+
+    <TextView
+        android:id="@+id/dtUmur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtUmur"
+        app:layout_constraintStart_toEndOf="@+id/txtUmur"
+        app:layout_constraintTop_toTopOf="@+id/txtUmur"
+        tools:text="Umur" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

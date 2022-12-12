@@ -18,4 +18,5 @@ class CareFragment : Fragment() {
         binding = FragmentCareBinding.inflate(inflater, container, false)
         return binding.root
     }
+
 }
