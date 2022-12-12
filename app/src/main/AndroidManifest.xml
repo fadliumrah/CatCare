@@ -19,12 +19,11 @@
         android:theme="@style/Theme.CatCare"
         tools:targetApi="31">
         <activity
-            android:name=".ui.dashboard.care.CareActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:name=".ui.dashboard.gallery.GalleryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dashboard.gallery.GalleryListActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.splashscreen.SplashScreenActivity"
             android:exported="true">
