@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Cat Care</string>
+    <string name="app_name">Dico Story</string>
 
     <!-- Title menu xml -->
     <string name="menu_title_refresh">Refresh</string>
