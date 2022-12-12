@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/btn_data_care"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/custom_profile_button_ripple"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/sphynx" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/img"
+            android:text="Name  :"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_name"
+            android:layout_alignBottom="@+id/txt_name"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/txt_name"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="Name" />
+
+        <TextView
+            android:id="@+id/txt_ras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:layout_alignStart="@+id/txt_name"
+            android:layout_marginTop="8dp"
+            android:text="Ras      :"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_ras"
+            android:layout_alignBottom="@+id/txt_ras"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/txt_ras"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="Ras" />
+
+        <TextView
+            android:id="@+id/txt_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_ras"
+            android:layout_alignStart="@+id/txt_ras"
+            android:layout_marginTop="8dp"
+            android:text="Color   :"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_color"
+            android:layout_alignBottom="@+id/txt_color"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/txt_color"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="Color" />
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

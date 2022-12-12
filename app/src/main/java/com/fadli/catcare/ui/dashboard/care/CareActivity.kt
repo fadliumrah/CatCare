@@ -30,7 +30,6 @@ class CareActivity : AppCompatActivity() {
 
     private fun setupAction1() {
         binding.ivKuku.setOnClickListener {
-            //startActivity(Intent(this, CareActivity::class.java))
             switchFragment(fragmentKuku)
         }
     }

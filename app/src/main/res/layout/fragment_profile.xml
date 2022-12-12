@@ -35,7 +35,7 @@
             android:fontFamily="sans-serif-medium"
             android:textColor="#5188CE"
             android:textSize="20sp"
-            tools:text="Muhamad Fadli" />
+            tools:text="Cat Care" />
 
         <TextView
             android:id="@+id/text_email"
@@ -63,6 +63,52 @@
             tools:text="user-xxxxxx" />
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/data_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Data Cat"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container" />
+
+    <RelativeLayout
+        android:id="@+id/btn_data_care"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/custom_profile_button_ripple"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_cat">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="My Cat"
+            android:textColor="#5188CE"
+            app:drawableTint="#5188CE" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/content_description_btn_app_setting"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            app:tint="#5188CE" />
+
+
+    </RelativeLayout>
+
 
     <TextView
         android:id="@+id/label_auth"
@@ -75,9 +121,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/container" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/btn_data_care" />
 
     <RelativeLayout
         android:id="@+id/btn_set_language"
