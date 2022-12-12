@@ -101,11 +101,102 @@
         👉🏻 shutter button to take a picture using the camera \n
         👉🏻 switch button to rotate camera lens
     </string>
+
+    <!-- KUKU-->
+    <string-array name="str_title_kuku">
+        <item>Potong Kuku Minggu Pertama</item>
+        <item>Potong Kuku Minggu Kedua</item>
+        <item>Potong Kuku Minggu Ketiga</item>
+        <item>Potong Kuku Minggu Keempat</item>
+    </string-array>
+
+    <string-array name="str_desc_kuku">
+        <item>1x - Seminggu</item>
+        <item>1x - Seminggu</item>
+        <item>1x - Seminggu</item>
+        <item>1x - Seminggu</item>
+    </string-array>
+
+    <string-array name="str_month_kuku">
+        <item>DES</item>
+        <item>DES</item>
+        <item>DES</item>
+        <item>DES</item>
+    </string-array>
+
+    <string-array name="str_day_kuku">
+        <item>Kamis</item>
+        <item>Rabu</item>
+        <item>Selasa</item>
+        <item>Senin</item>
+    </string-array>
+
+    <string-array name="str_date_kuku">
+        <item>1</item>
+        <item>7</item>
+        <item>13</item>
+        <item>19</item>
+    </string-array>
+
+    <string-array name="str_title_weight">
+        <item>Timbang Berat Badan Minggu 1</item>
+        <item>Timbang Berat Badan Minggu 2</item>
+        <item>Timbang Berat Badan Minggu 3</item>
+        <item>Timbang Berat Badan Minggu 4</item>
+    </string-array>
+
+    <string-array name="str_title_fleas">
+        <item>Obat Tetes Kutu</item>
+        <item>Obat Tetes Kutu</item>
+        <item>Obat Tetes Kutu</item>
+        <item>Obat Tetes Kutu</item>
+    </string-array>
+
+    <string-array name="str_dose_fleas">
+        <item>Berat : 1 ml/10 Kg Berat</item>
+        <item>Berat : 1,5 ml/15 Kg Berat</item>
+        <item>Berat : 2 ml/20 Kg Berat</item>
+        <item>Berat : 3 ml/30 Kg Berat</item>
+    </string-array>
+
+    <string-array name="str_age_fleas">
+        <item>Umur : 8 Minggu+</item>
+        <item>Umur : 8 Minggu+</item>
+        <item>Umur : 8 Minggu+</item>
+        <item>Umur : 8 Minggu+</item>
+    </string-array>
+
+    <string-array name="str_title_litterbox">
+        <item>Membersihkan dan Mengganti Litterbox Minggu 1</item>
+        <item>Membersihkan dan Mengganti Litterbox Minggu 2</item>
+        <item>Membersihkan dan Mengganti Litterbox Minggu 3</item>
+        <item>Membersihkan dan Mengganti Litterbox Minggu 4</item>
+    </string-array>
+
+    <string-array name="str_value_weight">
+        <item>Berat : 3.2 Kg</item>
+        <item>Berat : 2.2 Kg</item>
+        <item>Berat : 3.6 Kg</item>
+        <item>Berat : 4.2 Kg</item>
+    </string-array>
+    <string name="care">Care</string>
+
+
+
+
+
+
+
+
+
+
+
     <string name="appwidget_text" translatable="false">EXAMPLE</string>
     <string name="add_widget" translatable="false">Add widget</string>
     <string name="app_widget_description" translatable="false">This is an app widget description</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <!-- TODO: Remove or change this placeholder text -->
 
 </resources>
